@@ -9,14 +9,6 @@
     --text-maroon: hsl(350, 81%, 25%);
 }
 
-@media screen and (min-width: 37.5em){
-    button {
-        --button-width: 267px;
-        --button-height: 92px;
-    }
-    
-}
-
 
 * {
     box-sizing: border-box;
@@ -47,11 +39,7 @@ address {
     height: auto;
 }
 
-.img-background {
-    border: solid 1px red;
-}
-
-.img-home {
+.img-home-mobile {
     display: block;
     width: 100%;
     height: auto;
@@ -67,14 +55,25 @@ address {
     height: auto;
 }
 
+.img-dentrix-trainer {
+    display: block;
+    padding-top: 5em;
+    width: 40%;
+    max-width: 16rem;
+    min-width: 9rem;
+    margin: 0 auto;
+    height: auto;
+}
+
 ol, p, ul, section {
     margin: 1em 0;
     list-style-type: none;
 }
 
-.hide-mobile {
+.display-desktop {
     display: none;
-}
+    }
+
 
 .center-text,
 section p {
@@ -86,14 +85,14 @@ section p {
     padding-bottom: 2em;
 }
 
-.sec-problems {
+.sec-consulting {
     background-color: var(--bkg-mustard);
     color: var(--bkg-white);
     padding-top: 2em;
     padding-bottom: 2em;
 }
 
-.sec-problems li {
+.sec-consulting li {
     text-align: left;
     font-weight: bold;
 }
@@ -105,6 +104,9 @@ section p {
 .sec-podcast img {
     border: .1em black solid;
 }
+
+/* Footer */
+/* #region */
 
 footer {
     background-color: var(--bkg-maroon);
@@ -145,6 +147,8 @@ footer address {
     margin-bottom: 3em;
 }
 
+/* #endregion */
+
 /* Button rules */
 button {
     background-color: var(--button-blue);
@@ -155,6 +159,16 @@ button {
     font-weight: bold;
     border: none;
     border-radius: 2.5em;
+}
+
+.btn-sched-chat {
+    font-size: 1.1em;
+}
+
+.btn-sched-dentrix {
+    font-size: 1.2em;
+    width: auto;
+    padding: 0.75em;
 }
 
 /* TYPOGRAPHY */
@@ -179,4 +193,19 @@ h1, h2, h3, h4 {
 .nav-site a {
     color: var(--text-maroon);
     text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 37.5em){
+    button {
+        --button-width: 267px;
+        --button-height: 92px;
+    }
+    .display-desktop {
+    display: block;
+    position:absolute;
+    top: 20em;
+    left: 10%;
+    }    
 }
