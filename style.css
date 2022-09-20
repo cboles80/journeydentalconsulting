@@ -24,7 +24,7 @@ address {
 .contact-info {
     background-color: var(--bkg-maroon);
     padding: 3em 0;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 .contact-info a {
@@ -44,6 +44,12 @@ address {
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.img-transition {
+    display: block;
+    width: 100%;
+    height: 5px;
 }
 
 .img-podcast {
@@ -74,7 +80,6 @@ ol, p, ul, section {
     display: none;
     }
 
-
 .center-text,
 section p {
     margin-right: 1.5em;
@@ -90,11 +95,16 @@ section p {
     color: var(--bkg-white);
     padding-top: 2em;
     padding-bottom: 2em;
+    margin-bottom: 0;
 }
 
 .sec-consulting li {
     text-align: left;
     font-weight: bold;
+}
+
+.sec-dentrix {
+    padding: 2em;
 }
 
 .sec-podcast {
@@ -103,6 +113,15 @@ section p {
 
 .sec-podcast img {
     border: .1em black solid;
+}
+
+.sec-reviews {
+    padding: 1em;
+    margin-bottom: 0;
+}
+
+.sec-reviews section {
+    padding: 1em;
 }
 
 /* Footer */
@@ -114,7 +133,7 @@ footer {
     padding-top: 3.5em;
 }
 
-footer h3 {
+footer h2 {
     margin-bottom: 2em;
     font-weight: normal;
 }
@@ -155,16 +174,20 @@ button {
     color: var(--text-light);
     width: var(--button-width);
     height: var(--button-height);
-    font-size: 1.35em;
-    font-weight: bold;
+    font-size: 1.15em;
+    /* font-weight: bold; */
     border: none;
     border-radius: 2.5em;
+    text-transform: uppercase;
 }
 
-.btn-sched-chat {
-    font-size: 1.1em;
+button:hover {
+    color: var(--button-blue);
+    border: 2px solid var(--button-blue);
+    background-color: var(--text-light);
 }
 
+.btn-sched-chat,
 .btn-sched-dentrix {
     font-size: 1.2em;
     width: auto;
@@ -187,8 +210,11 @@ h1, h2, h3, h4 {
     font-size: 1.2rem;
 }
 
-
 /* NAVIGATION */
+.nav-site {
+    display: flex;
+    flex-direction: column;
+}
 
 .nav-site a {
     color: var(--text-maroon);
@@ -207,5 +233,10 @@ h1, h2, h3, h4 {
     position:absolute;
     top: 20em;
     left: 10%;
-    }    
+    }
+    .img-logo {
+        display:block;
+        width: 25%;
+        height: auto;
+    }
 }
