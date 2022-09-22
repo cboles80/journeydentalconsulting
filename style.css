@@ -174,7 +174,6 @@ button {
     width: var(--button-width);
     height: var(--button-height);
     font-size: 1.15em;
-    /* font-weight: bold; */
     border: none;
     border-radius: 2.5em;
     text-transform: uppercase;
@@ -184,6 +183,15 @@ button:hover {
     color: var(--button-blue);
     border: 2px solid var(--button-blue);
     background-color: var(--text-light);
+}
+
+.menu-toggle,
+.menu-toggle:hover {
+    background-color: #fff;
+    color: var(--text-maroon);
+    border: solid red 1px;
+    border-radius: 0;
+    font-size: 1.75em;
 }
 
 .btn-sched-chat,
