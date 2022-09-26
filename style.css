@@ -23,7 +23,6 @@ address {
 .contact-info {
     background-color: var(--bkg-maroon);
     padding: 3em 0;
-    /* margin-bottom: 2em; */
 }
 
 .contact-info a {
