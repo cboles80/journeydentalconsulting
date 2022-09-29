@@ -184,15 +184,6 @@ button:hover {
     background-color: var(--text-light);
 }
 
-.menu-toggle,
-.menu-toggle:hover {
-    background-color: #fff;
-    color: var(--text-maroon);
-    border: solid red 1px;
-    border-radius: 0;
-    font-size: 1.75em;
-}
-
 .btn-sched-chat,
 .btn-sched-dentrix {
     font-size: 1.2em;
@@ -221,6 +212,15 @@ h1, h2, h3, h4 {
 .nav-site a {
     color: var(--text-maroon);
     text-decoration: none;
+}
+
+.menu-toggle,
+.menu-toggle:hover {
+    background-color: #fff;
+    color: var(--text-maroon);
+    border: solid red 1px;
+    border-radius: 0;
+    font-size: 1.75em;
 }
 
 /* MEDIA QUERIES */
