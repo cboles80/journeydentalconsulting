@@ -168,11 +168,15 @@ footer address {
 
 /* Button rules */
 button {
-    background-color: var(--button-blue);    
-    width: var(--button-width);
-    height: var(--button-height);
+    appearance: none;
+    background: none;
+    border: solid 1px var(--button-blue);
+    outline: none;
+    color: var(--text-light);
+    background-color: var(--button-blue);
+    /* width: var(--button-width);
+    height: var(--button-height); */
     font-size: 1.15em;
-    border: none;
     border-radius: 2.5em;
     text-transform: uppercase;
     cursor: pointer;
@@ -180,21 +184,18 @@ button {
 
 button:hover {
     color: var(--button-blue);
-    border: 2px solid var(--button-blue);
+    border: 1px solid var(--button-blue);
     background-color: var(--text-light);
 }
 
-a button {
-    color: var(--text-light);
+button a {
     text-decoration: none;
-}
-
-button a:hover {
-    color: var(--button-blue);
+    color: var(--text-light);
 }
 
 .btn-sched-chat,
-.btn-sched-dentrix {
+.btn-sched-dentrix,
+.btn-learn-more {
     font-size: 1.2em;
     width: auto;
     padding: 0.75em;
