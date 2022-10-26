@@ -256,9 +256,29 @@ h1, h2, h3, h4 {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 37.5em) {
-    button {
-        --button-width: 267px;
-        --button-height: 92px;
+    .page-header {
+border: solid red 1px;
+        display: flex;
+        background-color: var(--bkg-maroon);
+    }
+    .nav-site {
+border: solid lightblue 1px;
+        width: 100%;
+    }
+    .nav-menu {
+border: solid purple 1px;
+        display: flex;
+        gap: 1rem;
+    }
+    .nav-menu li {
+        flex-grow: 1;
+    }
+    .nav-item a{
+border: solid yellow 1px;
+        color: var(--text-light);
+    }
+    .contact-info {
+        display: none;
     }
     .display-desktop {
     display: block;
