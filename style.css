@@ -260,14 +260,14 @@ h1, h2, h3, h4 {
 border: solid red 1px;
         display: flex;
         background-color: var(--bkg-maroon);
+        align-items: center;
     }
     .nav-site {
-border: solid lightblue 1px;
+border: solid blue 1px;
         width: 100%;
     }
     .nav-menu {
 border: solid purple 1px;
-        display: flex;
         gap: 1rem;
     }
     .nav-menu li {
