@@ -16,6 +16,12 @@
     font-family: inherit;
 }
 
+.page-frame {
+    width: 100%;
+    max-width: 950px;
+    margin-inline: auto;
+}
+
 address {
     font-style: normal;
 }
@@ -26,13 +32,13 @@ address {
 }
 
 .contact-info a {
-    color:white;
+    color: white;
     line-height: 1.75;
     text-decoration: none;
 }
 
 .img-logo {
-    display:block;
+    display: block;
     width: 100%;
     height: auto;
 }
@@ -69,7 +75,10 @@ address {
     height: auto;
 }
 
-ol, p, ul, section {
+ol,
+p,
+ul,
+section {
     margin: 1em 0;
     list-style-type: none;
 }
@@ -146,7 +155,7 @@ footer h2 {
 }
 
 footer a {
-    color:white;
+    color: white;
     line-height: 1.75;
     text-decoration: none;
 }
@@ -218,7 +227,10 @@ body {
     text-align: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     margin-bottom: 0.5em;
     line-height: 1.2;
 }
@@ -229,22 +241,12 @@ h1, h2, h3, h4 {
 
 /* NAVIGATION */
 
-.nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.nav-item{
-    list-style-type: none;
-}
-.nav-link{
-    text-decoration: none;
-}
-.hamburger{
-    display: none;
+.hamburger {
+    display: block;
     cursor: pointer;
 }
-.bar{
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -253,78 +255,107 @@ h1, h2, h3, h4 {
     transition: all 0.3s ease-in-out;
 }
 
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    flex-direction: column;
+    height: 0;
+    text-align: center;
+    transition: 0.3s;
+    background-color: var(--bkg-maroon);
+}
+
+.nav-item {
+    list-style-type: none;
+    margin: 0.5em 0;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu.active {
+    position: static;
+    height: auto;
+    margin: 0;
+}
+
+@media screen and (min-width: 46em) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-site {
+        width: 100%;
+    }
+
+    .nav-menu {
+        position: static;
+        flex-direction: row;
+        height: unset;
+        transition: unset;
+    }
+
+    .nav-menu li {
+        flex-grow: 1;
+        margin: 0;
+    }
+
+    .nav-item a {
+        padding: 0.5em;
+        font-size: clamp(.85em,calc( 1vw + 6px), 1.1em);
+        color: var(--text-light);
+    }
+
+}
+
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 46em) {
     .page-header {
-border: solid red 1px;
+        border: solid red 1px;
         display: flex;
         background-color: var(--bkg-maroon);
         align-items: center;
     }
-    .nav-site {
-border: solid blue 1px;
-        width: 100%;
+
+    .page-header img {
+        min-width: 250px;
     }
-    .nav-menu {
-border: solid purple 1px;
-        gap: 1rem;
-    }
-    .nav-menu li {
-        flex-grow: 1;
-    }
-    .nav-item a{
-border: solid yellow 1px;
-        color: var(--text-light);
-    }
+
     .contact-info {
         display: none;
     }
+
     .display-desktop {
-    display: block;
-    position:absolute;
-    top: 20em;
-    left: 10%;
+        display: block;
+        position: absolute;
+        top: 20em;
+        left: 10%;
     }
+
     .img-logo {
-        display:block;
+        display: block;
         width: 25%;
         height: auto;
-    }
-}
-
-@media screen and (max-width: 37.5em) {
-    .hamburger{
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        gap: 0;
-        flex-direction: column;
-        height: 0;
-        text-align: center;
-        /* transition: 0.3s; */
-        background-color: var(--bkg-maroon);
-    }
-    .nav-item{
-        margin: 0.5em 0;
-    }
-    .nav-item a{
-        color: white;
-    }
-    .nav-menu.active{
-        position: static;
-        height: auto;
-        margin: 0;
     }
 }
