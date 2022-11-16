@@ -83,19 +83,30 @@ section {
     list-style-type: none;
 }
 
-.display-desktop {
-    display: none;
-}
-
 div li,
 div p {
     margin-right: 1.5em;
     margin-left: 1.5em;
 }
 
+.img-hero {
+    position: relative;
+}
+
 .cta {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+@media screen and (min-width: 37.5em){
+.cta {
+    width: 350px;
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+    padding-block: 1.5em;
+border: 1px solid red;
+    }
 }
 
 .sec-consulting {
@@ -344,13 +355,6 @@ h4 {
 
     .contact-info {
         display: none;
-    }
-
-    .display-desktop {
-        display: block;
-        position: absolute;
-        top: 20em;
-        left: 10%;
     }
 
     .img-logo {
