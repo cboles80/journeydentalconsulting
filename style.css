@@ -354,12 +354,12 @@ h4 {
     background-color: var(--bkg-maroon);
 }
 
-.nav-item {
-    list-style-type: none;
+.nav-menu li {
     margin: 0.5em 0;
+    list-style-type: none;
 }
 
-.nav-link {
+.nav-menu a {
     color: white;
     text-decoration: none;
 }
@@ -391,7 +391,7 @@ h4 {
         margin: 0;
     }
 
-    .nav-item a {
+    .nav-menu a {
         padding: 0.5em;
         font-size: clamp(.85em, calc(1vw + 6px), 1.1em);
         color: var(--text-light);
