@@ -194,12 +194,14 @@ div p {
     content: "";
 }
 
-.sizzle-bar {
-    background-color: black;
-    background-image: url("/img/sizzle_bar.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0.175em;
+.img-hero .sizzle::before {
+    display: none;
+}
+
+@media screen and (min-width: 46em) {
+    .img-hero .sizzle::before {
+        display: block;
+    }
 }
 
 /* Footer */
