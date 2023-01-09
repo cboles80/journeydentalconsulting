@@ -100,13 +100,11 @@ footer h2 {
 
 @media screen and (min-width: 52em) {
 	.call-to-action {
-        background-color: hsla(0, 0%, 100%, 0.663);
+        background-color: hsla(0, 0%, 100%, 0.50);
         border-radius: 10%;
 		position: absolute;
         top: 15%;
         left: 12.5%;
-		/* top: 10vw; */
-		/* left: 5vw; */
 		width: 35%;
 		padding-block: 1.5em;
 	}
@@ -434,7 +432,8 @@ footer .contact a {
 		background-color: var(--bkg-maroon);
 	}
 
-	.page-header img {
+	.page-header img,
+	.page-header a {
 		min-width: 250px;
 	}
 
@@ -442,7 +441,8 @@ footer .contact a {
 		display: none;
 	}
 
-	header .img-logo {
+	.page-header .img-logo,
+	.page-header a {
 		width: 25%;
 	}
 }
