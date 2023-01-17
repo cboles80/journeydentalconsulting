@@ -303,6 +303,15 @@ footer .contact a {
 	margin: 0;
 }
 
+.jdc-about a.about,
+.jdc-consulting a.consulting,
+.jdc-training a.training,
+.jdc-speaking a.speaking,
+.jdc-contact a.contact
+ {
+	font-weight: bold;
+}
+
 @media screen and (min-width: 46em) {
 	.hamburger {
 		display: none;
@@ -432,17 +441,12 @@ footer .contact a {
 		background-color: var(--bkg-maroon);
 	}
 
-	.page-header img,
 	.page-header a {
 		min-width: 250px;
+		width: 25%;
 	}
 
 	.contact-info {
 		display: none;
-	}
-
-	.page-header .img-logo,
-	.page-header a {
-		width: 25%;
 	}
 }
