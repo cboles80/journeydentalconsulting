@@ -48,6 +48,11 @@ div p {
 	position: relative;
 }
 
+.page-header a img {
+	background-color: white;
+	padding: 1em;
+}
+
 /* Footer */
 /* #region */
 
@@ -196,7 +201,8 @@ h4 {
 .page-about h1 {
 	background-color: var(--bkg-maroon);
 	color: var(--text-light);
-	padding-block: 1.25em;
+	padding-block: 1em;
+	border: solid 1px black;
 }
 
 .page-about h2 {
@@ -255,6 +261,7 @@ footer .contact a {
 .hamburger {
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 0.5em;
 	background-color: transparent;
 	border: none;
 	cursor: pointer;
@@ -443,6 +450,9 @@ footer .contact a {
 	padding: 0 2em 1em;
 }
 
+/* ABOUT PAGE */
+
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 46em) {
@@ -457,7 +467,17 @@ footer .contact a {
 		width: 25%;
 	}
 
+	.page-header a img {
+		background-color: white;
+		padding: 0.9em;
+	}
+
 	.contact-info {
 		display: none;
+	}
+
+	.page-about {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 }
