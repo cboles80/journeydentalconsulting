@@ -103,7 +103,7 @@ footer h2 {
     display: none;
 }
 
-@media screen and (min-width: 52em) {
+@media screen and (min-width: 46em) {
 	.call-to-action {
         background-color: hsla(0, 0%, 100%, 0.50);
         border-radius: 10%;
@@ -220,7 +220,7 @@ footer .contact a {
 }
 
 .call-to-action p {
-	font-size: 1.2rem;
+	font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 .sec-consulting {
