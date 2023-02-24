@@ -49,6 +49,9 @@ div p {
 }
 
 .page-header a img {
+	width: 80%;
+	max-width: 320px;
+	margin-inline: auto;
 	background-color: white;
 	padding: 1em;
 }
@@ -57,10 +60,11 @@ div p {
 /* #region */
 
 footer div {
-	padding: 1em 0;
+	padding-block: 1em;
 	color: var(--text-light);
 	background-color: var(--bkg-maroon);
 	margin-inline: auto;
+	flex-basis: 33%;
 }
 
 footer .logo {
@@ -84,6 +88,8 @@ footer h2 {
 	/* Turn on the logo. */
 	footer .logo {
 		display: block;
+		align-self: flex-start;
+		padding-top: 0;
 	}
 
 	footer .copyright {
@@ -212,6 +218,10 @@ address ul {
 	margin: 0 auto;
 }
 
+address span {
+	line-height: 1;
+}
+
 footer .contact a {
 	color: white;
 	line-height: 1.75;
@@ -222,6 +232,7 @@ footer .contact a {
 	display: grid;
 	grid-template-columns: 3ch 1fr;
 	column-gap: 1em;
+	align-items: center;
 }
 
 .call-to-action p {
@@ -472,6 +483,7 @@ footer .contact a {
 	}
 
 	.page-header a img {
+		width: 100%;
 		background-color: white;
 		padding: 0.9em;
 	}
