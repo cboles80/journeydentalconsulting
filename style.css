@@ -198,15 +198,13 @@ h4 {
 }
 
 .page-about h1 {
-	background-color: var(--bkg-maroon);
+	margin-block-end: unset;
+	/* background-color: var(--bkg-maroon); */
+	background-color: var(--bkg-mustard);
+	/* color: var(--text-light); */
 	color: var(--text-light);
 	padding-block: 1em;
-	border: solid 1px black;
-}
-
-.page-about h2 {
-	color: var(--bkg-mustard);
-	padding: 1em 2em;
+	/* border: solid 1px black; */
 }
 
 address {
@@ -467,6 +465,41 @@ footer .contact a {
 
 /* ABOUT PAGE */
 
+/* CONSULTING PAGE */
+.sec-intro-consulting {
+	position: relative;
+}
+
+.sec-hiring {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.cta-consulting {
+	position:absolute;
+	top: 5%;
+	left: 2%;
+	width: 45%;
+}
+
+.cta-consulting h1 {
+	font-size: 1.5em;
+}
+
+.cta-consulting p,
+.cta-consulting q {
+	font-size: 0.975em;
+}
+
+/* TRAINING PAGE */
+.dtrx-training {
+	padding-bottom: 2em;
+}
+
+.dtrx-training .img-dentrix-trainer {
+	min-width: 12em;
+	padding-top: 1em;
+}
 
 /* MEDIA QUERIES */
 
