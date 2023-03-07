@@ -494,6 +494,7 @@ footer .contact a {
 /* TRAINING PAGE */
 .dtrx-training {
 	padding-bottom: 2em;
+	background-color: hsl(197, 75%, 94%);
 }
 
 .dtrx-training .img-dentrix-trainer {
@@ -501,7 +502,33 @@ footer .contact a {
 	padding-top: 1em;
 }
 
+.sec-dtrx-training ul li {
+	font-size: 1em;
+	list-style-type: disc;
+}
+
 /* SPEAKING PAGE */
+
+.sec-speaking-pg p {
+	margin: unset;
+	padding-block: 1em;
+	color: var(--text-light);
+	background-color: var(--bkg-maroon);
+}
+
+.sec-teamwork p {
+	color: var(--bkg-mustard);
+}
+
+.sec-solution {
+	padding: 1.25em 2em;
+	background-color: var(--bkg-mustard);
+}
+
+.sec-solution p{
+	margin: unset;
+	color: var(--text-light);
+}
 
 /* MEDIA QUERIES */
 
