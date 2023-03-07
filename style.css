@@ -463,6 +463,13 @@ footer .contact a {
 
 /* ABOUT PAGE */
 
+@media screen and (min-width: 46em) {
+	.page-about img{
+		position:sticky;
+		top: 10%;
+	}	
+}
+
 /* CONSULTING PAGE */
 .sec-intro-consulting {
 	position: relative;
