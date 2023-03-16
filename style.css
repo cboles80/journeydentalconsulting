@@ -499,6 +499,10 @@ footer .contact a {
 }
 
 /* TRAINING PAGE */
+.page-training picture{
+	filter: brightness(50%);
+}
+
 .dtrx-training {
 	padding-bottom: 2em;
 	background-color: hsl(197, 75%, 94%);
@@ -511,11 +515,14 @@ footer .contact a {
 
 .sec-dtrx-training ul li {
 	font-size: 1em;
-	list-style-type: disc;
+	text-align: left;
+}
+
+.sec-dtrx-training span {
+	padding-inline-end: 0.5em;
 }
 
 /* SPEAKING PAGE */
-
 .sec-speaking-pg p {
 	margin: unset;
 	padding-block: 1em;
