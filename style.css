@@ -519,8 +519,18 @@ footer .contact a {
 }
 
 @media screen and (min-width: 46em) {
-	.page-training picture{
-		filter: brightness(30%);
+	.page-training {
+		position: relative;
+	}
+	.page-training picture {
+		filter: brightness(29%);
+	}
+	.dtrx-training {
+		position: absolute;
+		top: 30%;
+		background: none;
+		color: var(--text-light);
+		font-weight: bold;
 	}
 }
 
