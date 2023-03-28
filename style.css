@@ -391,7 +391,6 @@ footer .contact a {
 	min-width: 9rem;
 	max-width: 16rem;
 	margin: 0 auto;
-	padding-top: 5em;
 }
 
 .contact-info {
@@ -440,7 +439,7 @@ footer .contact a {
 }
 
 .sec-dentrix {
-	padding: 2em;
+	padding: 4em 2em;
 }
 
 .sec-podcast {
