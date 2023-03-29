@@ -474,13 +474,17 @@ footer .contact a {
 	position: relative;
 }
 
+.sec-intro-consulting picture img {
+	height: 390px;
+}
+
 .sec-hiring {
 	padding-top: 1em;
 	padding-bottom: 2em;
 }
 
 .cta-consulting h1 {
-	font-size: clamp(1.35em, 1.375em, 1.5em);
+	font-size: clamp(1.35em, 2.9vw, 1.5em);
 }
 
 .cta-consulting p,
@@ -508,6 +512,13 @@ footer .contact a {
 	padding-top: 1em;
 }
 
+.sec-dtrx-training {
+	padding-block: 2em;
+}
+.sec-dtrx-training img {
+	padding-block: 1.5em;
+}
+
 .sec-dtrx-training ul li {
 	font-size: 1em;
 	text-align: left;
@@ -529,6 +540,8 @@ footer .contact a {
 		top: 30%;
 		background: none;
 		color: var(--text-light);
+	}
+	.dtrx-training p {
 		font-weight: bold;
 	}
 }
