@@ -483,6 +483,10 @@ footer .contact a {
 	padding-bottom: 2em;
 }
 
+.cta-consulting {
+	padding-block: 1.75em;
+}
+
 .cta-consulting h1 {
 	font-size: clamp(1.35em, 2.9vw, 1.5em);
 }
@@ -492,9 +496,19 @@ footer .contact a {
 	font-size: 0.975em;
 }
 
+.sec-how {
+	padding-block: 1.75em;
+
+}
+
+.sec-how ul {
+	margin: 0;
+}
+
 @media screen and (min-width: 46em) {
 	.cta-consulting {
 		position:absolute;
+		padding-block: unset;
 		top: 5%;
 		left: 2%;
 		width: 45%;
