@@ -512,7 +512,11 @@ footer .contact a {
 		top: 5%;
 		left: 2%;
 		width: 45%;
-	}	
+	}
+	.sec-hiring,
+	.sec-how {
+		padding-inline: 5em;
+	}
 }
 
 /* TRAINING PAGE */
